@@ -42,13 +42,22 @@ if userinput.lower() == "start":
 
         elif choice == 2:
             while True:
-                power = int(input("choose your attack level"))
+                power2 = int(input("choose your attack level"))
+                if power2 < 1 or playermp < power2:
+                    print("unavaliable attack level")
+                    continue
+                playermp -= power2
                 
 
 
         if choice == 3:
             while True:
-                power = int(input("choose your defence level"))
+                power3 = int(input("choose your defence level"))
+                if power3 < 1 or playermp < power3-1
+
+
+
+
 
             
             
