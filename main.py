@@ -1,6 +1,8 @@
+import random
+
 print("welcome to Harrison's game")
 def status(playerhp,enemyhp,playermp,enemymp): 
-    print(status)
+    print({playerhp},{playermp},{enemyhp},{enemymp})
 
 
 
@@ -53,7 +55,41 @@ if userinput.lower() == "start":
         if choice == 3:
             while True:
                 power3 = int(input("choose your defence level"))
-                if power3 < 1 or playermp < power3-1
+                if power3 < 1 or playermp < power3 - 1:
+                    print("unavaliable defence level")
+                    continue
+                    cost = power3 - 1
+                    if cost > 0:
+                        playermp -= cost
+
+
+                    ea = random.choice
+                    if enemymp == 0:
+                        ea = "1"
+                        enemymp += 1
+                        print("enemymp +1")
+
+                    elif ea == "2":
+                        epower2 = random.randint(1,enemymp)
+                        enemymp -= epower2
+                        print("your enemy attacked, level{epower2}")
+                    elif ea == "3": 
+                        epower3 = random.randint(1,enemymp+1)
+                        ecost = epower3 - 1
+                        if cost > 0:
+                            enemymp -= cost
+                        ea = "3"
+                        print("your enemy defended, level{epower3}")   
+
+
+
+
+                                            
+
+
+
+
+
 
 
 
