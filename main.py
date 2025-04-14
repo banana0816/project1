@@ -10,6 +10,9 @@ print("welcome to Harrison's game")
     #self.name = name
     #self.hp = health
     #self.mp = mana
+
+
+    
 def status(playerhp,enemyhp,playermp,enemymp): 
         print({playerhp},{playermp},{enemyhp},{enemymp})
 
@@ -67,7 +70,7 @@ class player:
                 mp -= power2
                 print(mp)
                 print("enemy action: charge")
-                print("enemy hp - {power2}")
+                print("enemy was")
                 break
 
 
