@@ -37,7 +37,7 @@ def get_level(mp, action): #detect the level of attack or defend
                 
             elif action == "defend":
                 level = int(input(f"Enter defend level {action}(current MP is {mp}):"))
-                if 1 <= level <= mp:
+                if 1 <= level <= mp + 1:
                     return level
                 
         except:
@@ -134,4 +134,4 @@ elif enemy_hp <= 0:
 
 
 
-    
+
