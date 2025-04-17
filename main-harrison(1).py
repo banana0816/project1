@@ -133,5 +133,3 @@ elif enemy_hp <= 0:
     print("\nYou win!")
 
 
-
-
