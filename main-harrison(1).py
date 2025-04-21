@@ -109,7 +109,7 @@ while player_hp > 0 and enemy_hp > 0:
         if player_level < enemy_level:
             pass
         else:
-            enemy_hp -= enemy_level - player_level
+            enemy_hp -= player_level - enemy_level
     elif player_action == 3 and enemy_action == 2:
         if enemy_level < player_level:
             pass
